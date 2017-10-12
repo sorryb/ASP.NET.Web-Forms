@@ -1,0 +1,25 @@
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\bin\Debug\btnet_screen_capture.exe
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\bin\Debug\btnet_screen_capture.pdb
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet.AboutForm.resources
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet.ConfigForm.resources
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet.MainForm.resources
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet.Properties.Resources.resources
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet.RubberBandForm.resources
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet_screen_capture.csproj.GenerateResource.Cache
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet_screen_capture.exe
+D:\Work\BugTracker files\Exemple\BugTracker.net\btnet_3_4_4\screen_capture\obj\Debug\btnet_screen_capture.pdb
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\ResolveAssemblyReference.cache
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet.AboutForm.resources
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet.ConfigForm.resources
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet.MainForm.resources
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet.Properties.Resources.resources
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet.RubberBandForm.resources
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\GenerateResource-ResGen.read.5.tlog
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet_screen_capture.exe
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\bin\Debug\btnet_screen_capture.exe.config
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\bin\Debug\btnet_screen_capture.exe
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\bin\Debug\btnet_screen_capture.pdb
+E:\Kits\Kit DotNET\Dot NET\Exemple\Webservice with Win Forms and Web Forms\WebserviceWinForms\screen_capture\obj\Debug\btnet_screen_capture.pdb

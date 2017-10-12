@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SaveIssue">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="issueId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="projectId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveIssueResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveIssueResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectByMemberUsername">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProjectByMemberUsernameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectByMemberUsernameResult" type="tns:ArrayOfProjectInfoBase" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProjectInfoBase">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProjectInfoBase" nillable="true" type="tns:ProjectInfoBase" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProjectInfoBase" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Key" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProjectInfo">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ProjectInfoBase" />
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveIssueSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveIssue" />
+  </wsdl:message>
+  <wsdl:message name="SaveIssueSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveIssueResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectByMemberUsernameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectByMemberUsername" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectByMemberUsernameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectByMemberUsernameResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BugTrackerWebServiceSoap">
+    <wsdl:operation name="SaveIssue">
+      <wsdl:input message="tns:SaveIssueSoapIn" />
+      <wsdl:output message="tns:SaveIssueSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectByMemberUsername">
+      <wsdl:input message="tns:GetProjectByMemberUsernameSoapIn" />
+      <wsdl:output message="tns:GetProjectByMemberUsernameSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BugTrackerWebServiceSoap" type="tns:BugTrackerWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveIssue">
+      <soap:operation soapAction="http://tempuri.org/SaveIssue" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectByMemberUsername">
+      <soap:operation soapAction="http://tempuri.org/GetProjectByMemberUsername" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BugTrackerWebServiceSoap12" type="tns:BugTrackerWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveIssue">
+      <soap12:operation soapAction="http://tempuri.org/SaveIssue" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectByMemberUsername">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectByMemberUsername" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BugTrackerWebService">
+    <wsdl:port name="BugTrackerWebServiceSoap" binding="tns:BugTrackerWebServiceSoap">
+      <soap:address location="http://localhost/BugTracker4.0/Service/BugTrackerWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BugTrackerWebServiceSoap12" binding="tns:BugTrackerWebServiceSoap12">
+      <soap12:address location="http://localhost/BugTracker4.0/Service/BugTrackerWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

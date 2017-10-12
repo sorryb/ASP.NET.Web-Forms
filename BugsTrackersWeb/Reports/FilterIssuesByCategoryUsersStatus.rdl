@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="BugTracker">
+      <DataSourceReference>BugTracker</DataSourceReference>
+      <rd:DataSourceID>c2c37c86-b691-4055-ad37-d24adc193212</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>1in</BottomMargin>
+  <RightMargin>1in</RightMargin>
+  <ReportParameters>
+    <ReportParameter Name="projectID">
+      <DataType>String</DataType>
+      <Prompt>Proiectele </Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Projects</DataSetName>
+          <ValueField>ProjectId</ValueField>
+          <LabelField>ProjectName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="statusID">
+      <DataType>String</DataType>
+      <Prompt>Status </Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Status</DataSetName>
+          <ValueField>StatusId</ValueField>
+          <LabelField>StatusName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="categoryID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>Categories</DataSetName>
+          <ValueField>CategoryId</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Categorie</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>Categories</DataSetName>
+          <ValueField>CategoryId</ValueField>
+          <LabelField>CategoryName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="startDate">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>7</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Perioada</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>7</Value>
+            <Label>De o saptamana</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>30</Value>
+            <Label>De o luna</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>90</Value>
+            <Label>De un trimestru</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>365</Value>
+            <Label>De un an</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Left>3.25in</Left>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>1</ZIndex>
+        <Width>5in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontFamily>Tahoma</FontFamily>
+          <FontSize>18pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.33in</Height>
+        <Value>Bug-uri si Evolutii</Value>
+      </Textbox>
+      <Table Name="table1">
+        <DataSetName>BugTracker</DataSetName>
+        <Top>0.33in</Top>
+        <Width>12.25in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="UserName">
+                      <rd:DefaultName>UserName</rd:DefaultName>
+                      <ZIndex>5</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!UserName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DateCreated">
+                      <rd:DefaultName>DateCreated</rd:DefaultName>
+                      <ZIndex>4</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DateCreated.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="StatusName">
+                      <rd:DefaultName>StatusName</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!StatusName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="IssueId">
+                      <rd:DefaultName>IssueId</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Action>
+                        <Drillthrough>
+                          <ReportName>TaskByID</ReportName>
+                          <Parameters>
+                            <Parameter Name="issueID">
+                              <Value>=Fields!IssueId.Value</Value>
+                            </Parameter>
+                          </Parameters>
+                        </Drillthrough>
+                      </Action>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <TextDecoration>Underline</TextDecoration>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!IssueId.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="IssueTitle">
+                      <rd:DefaultName>IssueTitle</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!IssueTitle.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="CategoryName">
+                      <rd:DefaultName>CategoryName</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontSize>9pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!CategoryName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.19in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Open by</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Date Created</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Status Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <ZIndex>8</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>ID</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <ZIndex>7</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Issue Title</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <ZIndex>6</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontFamily>Tahoma</FontFamily>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>11pt</FontSize>
+                        <BorderColor>
+                          <Default>LightGrey</Default>
+                        </BorderColor>
+                        <BackgroundColor>CornflowerBlue</BackgroundColor>
+                        <Color>White</Color>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>Category Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.22in</Height>
+            </TableRow>
+          </TableRows>
+          <RepeatOnNewPage>true</RepeatOnNewPage>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>4.5in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.125in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Height>0.74in</Height>
+  </Body>
+  <rd:ReportID>fef3bd1b-a4c6-4191-80fe-fd8f5cc2791f</rd:ReportID>
+  <LeftMargin>1in</LeftMargin>
+  <DataSets>
+    <DataSet Name="BugTracker">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>select * from dbo.SelectTaskByID where statusID IN( @statusID) AND categoryId IN(@categoryID) AND (getdate() - @startDate) &lt; CreationDate order by DateCreated</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@statusID">
+            <Value>=Parameters!statusID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@categoryID">
+            <Value>=Parameters!categoryID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@startDate">
+            <Value>=Parameters!startDate.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>BugTracker</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="UserName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>UserName</DataField>
+        </Field>
+        <Field Name="DateCreated">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DateCreated</DataField>
+        </Field>
+        <Field Name="StatusId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>StatusId</DataField>
+        </Field>
+        <Field Name="StatusName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>StatusName</DataField>
+        </Field>
+        <Field Name="IssueId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>IssueId</DataField>
+        </Field>
+        <Field Name="IssueTitle">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>IssueTitle</DataField>
+        </Field>
+        <Field Name="CategoryId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CategoryId</DataField>
+        </Field>
+        <Field Name="CategoryName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CategoryName</DataField>
+        </Field>
+        <Field Name="CreationDate">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>CreationDate</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Status">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT     StatusId, StatusName
+FROM         ProjectStatus
+WHERE     (ProjectId = @projectID)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@projectID">
+            <Value>=Parameters!projectID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>BugTracker</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="StatusId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>StatusId</DataField>
+        </Field>
+        <Field Name="StatusName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>StatusName</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Projects">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT     ProjectId, ProjectName
+FROM         Projects</CommandText>
+        <DataSourceName>BugTracker</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="ProjectId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>ProjectId</DataField>
+        </Field>
+        <Field Name="ProjectName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ProjectName</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Categories">
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT     CategoryId, CategoryName, ProjectId
+FROM         ProjectCategories where projectId=@projectID</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@projectID">
+            <Value>=Parameters!projectID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <DataSourceName>BugTracker</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="CategoryId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>CategoryId</DataField>
+        </Field>
+        <Field Name="CategoryName">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CategoryName</DataField>
+        </Field>
+        <Field Name="ProjectId">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>ProjectId</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>16in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

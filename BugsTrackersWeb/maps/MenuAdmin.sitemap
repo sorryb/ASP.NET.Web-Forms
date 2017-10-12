@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+	<siteMapNode title="Taskuri"
+				 url="~/Issues/IssueList.aspx"
+				 description="" />
+	
+	<siteMapNode title="Cautare" url=""
+				 description="parent">
+		<siteMapNode title="Cautare task-uri"
+					 url="~/Queries/QueryList.aspx"
+					 description="begin" />
+		<siteMapNode title="Cautare bug-uri"
+					 url="~/Queries/QueryList.aspx"
+					 description="" />
+		<siteMapNode title="Cautare activitati"
+					 url="~/Queries/QueryList.aspx"
+					 description="end" />
+	</siteMapNode>
+	
+	<siteMapNode title="Activitati"
+				 url="~/DaylyActivities.aspx"
+				 description="" />
+	
+	<siteMapNode title="Administrare"
+				 url=""
+				 description="parent" >
+		<siteMapNode title="Administrare proiecte"
+					 url="~/Administration/Projects/ProjectList.aspx"
+					 description="begin" />
+		<siteMapNode title="Utilizatori"
+					 url=""
+					 description="parent" >
+			<siteMapNode title="Online"
+						 url="~/Administration/Users/UserList.aspx"
+						 description="begin" />
+			<siteMapNode title="Blocati"
+						 url="~/Administration/Users/UserList.aspx"
+						 description="" />
+			<siteMapNode title="Noi"
+						 url="~/Administration/Users/UserDetail.aspx"
+						 description="" />
+			<siteMapNode title="Activi"
+						 url="~/Administration/Users/UserList.aspx"
+						 description="end" />
+		</siteMapNode>
+		<siteMapNode title="Support"
+					 url="~/admin/Admin1.aspx"
+					 description="" />
+		<siteMapNode title="Forums"
+					 url="~/acc/AccWebForm3.aspx"
+					 description="end" />
+	</siteMapNode>
+	<siteMapNode title="Rapoarte"
+				 url="~/Reports/SelectReportAdministrators.aspx"
+				 description="" />
+	<siteMapNode title="Iesire"
+			 url="~/LogOff.aspx"
+			 description="" />
+</siteMap>

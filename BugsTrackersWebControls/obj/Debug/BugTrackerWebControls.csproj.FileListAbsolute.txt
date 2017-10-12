@@ -1,0 +1,16 @@
+D:\Work\BugTracker files\Arhive\Vers Noua\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.dll
+D:\Work\BugTracker files\Arhive\Vers Noua\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.pdb
+D:\Work\BugTracker files\Arhive\Vers Noua\BugTrackerWebControls\obj\Debug\ResolveAssemblyReference.cache
+D:\Work\BugTracker files\Arhive\Vers Noua\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.dll
+D:\Work\BugTracker files\Arhive\Vers Noua\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.pdb
+D:\Work\BugTracker files\Arhive\Versiunea Noua\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.dll
+D:\Work\BugTracker files\Arhive\Versiunea Noua\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.pdb
+D:\Work\BugTracker files\Arhive\Versiunea Noua\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.dll
+D:\Work\BugTracker files\Arhive\Versiunea Noua\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.pdb
+D:\Work\BugTracker files\Arhive\Versiunea Noua\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.csprojResolveAssemblyReference.cache
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.dll
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\bin\Debug\BugTrackerWebControls.pdb
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.csprojResolveAssemblyReference.cache
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.csproj.CoreCompileInputs.cache
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.dll
+G:\Work\BugTracker files\BugsTracker.Core\BugTrackerWebControls\obj\Debug\BugTrackerWebControls.pdb

@@ -1,0 +1,25 @@
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\btnet.AboutForm.resources
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\btnet.ConfigForm.resources
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\btnet.MainForm.resources
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\btnet.Properties.Resources.resources
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\btnet.RubberBandForm.resources
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\bin\Debug\ScreenCapture.exe.config
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\bin\Debug\ScreenCapture.exe
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\bin\Debug\ScreenCapture.pdb
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\ScreenCapture.exe
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\ScreenCapture.pdb
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\ScreenCapture.csprojResolveAssemblyReference.cache
+D:\Work\BugTracker files\Arhive\Versiunea Noua\ScreenCapture\obj\Debug\ScreenCapture.csproj.GenerateResource.Cache
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\bin\Debug\ScreenCapture.exe.config
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\bin\Debug\ScreenCapture.exe
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\bin\Debug\ScreenCapture.pdb
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\ScreenCapture.csprojResolveAssemblyReference.cache
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\btnet.AboutForm.resources
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\btnet.ConfigForm.resources
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\btnet.MainForm.resources
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\btnet.Properties.Resources.resources
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\btnet.RubberBandForm.resources
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\ScreenCapture.csproj.GenerateResource.Cache
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\ScreenCapture.csproj.CoreCompileInputs.cache
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\ScreenCapture.exe
+G:\Work\BugTracker files\BugsTracker.Core\ScreenCapture\obj\Debug\ScreenCapture.pdb

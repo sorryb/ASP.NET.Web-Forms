@@ -1,0 +1,5 @@
+G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersWebControls\bin\Debug\BugTrackerWebControls.dll
+G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersWebControls\bin\Debug\BugTrackerWebControls.pdb
+G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersWebControls\obj\Debug\BugsTrackersWebControls.csproj.CoreCompileInputs.cache
+G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersWebControls\obj\Debug\BugTrackerWebControls.dll
+G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersWebControls\obj\Debug\BugTrackerWebControls.pdb

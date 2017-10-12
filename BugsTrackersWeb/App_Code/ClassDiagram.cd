@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="BugTracker.BusinessLogicLayer.Chart.BarGraph" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\BarGraph.cs</FileName>
+      <HashCode>BEAEBJACDCPBIkVAhRAgAUBhCCAKBQhQAMiCACQBAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Chart.Chart" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Chart.cs</FileName>
+      <HashCode>AACAAAAAAAAIAgAAAAAAAAAAAAAAAACAAAiAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Chart.ChartItem" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ChartItem.cs</FileName>
+      <HashCode>ABAAAgAAEEAoAAAEAFAAAAAAIAAAAABAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Chart.ChartItemsCollection" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ChartItem.cs</FileName>
+      <HashCode>AEIAAAAAAAAAAAAACAAABAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CategoriesCollection" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CategoriesCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Category" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Category.cs</FileName>
+      <HashCode>AAACAIBCAAKAAAAAkAAAIAQABEAAAoAAAAAAAABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CategoryCollection" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CategoryCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CategoryTree" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CategoryTree.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAACAAACBBQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CustomField" Collapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CustomField.cs</FileName>
+      <HashCode>AAACEIAAAAMAABAAAAEAMAYABAAAggAAgAAgAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CustomFieldCollection" Collapsed="true">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CustomFieldCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.CustomPrincipal" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\CustomPrincipal.cs</FileName>
+      <HashCode>AAAAIAAACAAAAAAQAAAAAAwAAAgABAgAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.DefaultValues" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\DefaultValues.cs</FileName>
+      <HashCode>AMACAAAAAAAQAAAIIAAAAAAAAaAAAAAABAQAAEAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.DirectoryHelper" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\DirectoryHelper.cs</FileName>
+      <HashCode>gAAAAAAAAAACAAIAAAAAAAAAAACAAIAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Globals" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Globals.cs</FileName>
+      <HashCode>AAACAAAQAAAAIAAAAAgAAACAAACACAoAAAAAAACAIQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Issue" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Issue.cs</FileName>
+      <HashCode>AEIGTKAIAGKCAmCSABBAMBQUDKAAQhBAABIkWgGFAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueAttachment" Collapsed="true">
+    <Position X="17.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueAttachment.cs</FileName>
+      <HashCode>AAACQICAAAAAACAQAAASIAAAAAQgAIQAEAAUEABEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueAttachmentCollection" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueAttachmentCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueCollection" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEQBAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueComment" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueComment.cs</FileName>
+      <HashCode>AAACQICEAAAAACAQAAAAIAAAAAAAAAAAEAAUUAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueCommentCollection" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueCommentCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueHistory" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueHistory.cs</FileName>
+      <HashCode>AAACAACAAAAAACAQAAAAAAAAAAAAAAAAEAAFEAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueHistoryCollection" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueHistoryCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueNotification" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueNotification.cs</FileName>
+      <HashCode>AAACAICAAAAAAQEQgAAAEAAAAAAAAEAAUAAAIAAkAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.IssueNotificationCollection" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueNotificationCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.ITSecurity" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ITSecurity.cs</FileName>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAIAAAACAAAAACAAAAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.ITUser" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ITUser.cs</FileName>
+      <HashCode>IAACEMAIACACAEIBEQIAAA4AABWEAIACAUAgEAUEACg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.ITUserCollection" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ITUserCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEQBAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Milestone" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Milestone.cs</FileName>
+      <HashCode>AEACQIAAAAAAAAAAAAAAIAQABAEAAgAAAAgAAAgEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.MilestoneCollection" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\MilestoneCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Priority" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Priority.cs</FileName>
+      <HashCode>AAACQIAAAAAAAAAAAAABIAQABCEAAgAAAAgAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.PriorityCollection" Collapsed="true">
+    <Position X="15.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\PriorityCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Project" Collapsed="true">
+    <Position X="17.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Project.cs</FileName>
+      <HashCode>gACCQIAAAAChQCQQgAAIYgQABSEAAICEUCFEEBAMEgI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.ProjectCollection" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ProjectCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEQBAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.ProjectsCollection" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\ProjectsCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Query" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Query.cs</FileName>
+      <HashCode>AAACAAAAAAAAAAAAAgAAIAQAAAAABAAAAAAAAgAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.QueryClause" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\QueryClause.cs</FileName>
+      <HashCode>AAAAgIAACAIgAAAAAAAAAAAAgAiAAAAEAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.QueryClauseCollection" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\QueryClauseCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.QueryCollection" Collapsed="true">
+    <Position X="14" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\QueryCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.QueryField" Collapsed="true">
+    <Position X="15.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\QueryField.cs</FileName>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.RelatedIssue" Collapsed="true">
+    <Position X="17.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\RelatedIssue.cs</FileName>
+      <HashCode>EAAAAACAAAAAAEAAAAAQAAACAIAIAQgAMEQEEAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.RelatedIssueCollection" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\RelatedIssueCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Role" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Role.cs</FileName>
+      <HashCode>AAACEAAAAAAAAAAAAAAAIAQAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.RoleCollection" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\RoleCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.Status" Collapsed="true">
+    <Position X="14" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\Status.cs</FileName>
+      <HashCode>AAACQIAAAAAAAAAAAAAAIASAhAEAAgAAABgAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.StatusCollection" Collapsed="true">
+    <Position X="15.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\StatusCollection.cs</FileName>
+      <HashCode>AEIEAEAAAAAAAAAACAEABAAAAAAAAAAAAAQAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.TimeEntriesCollection" Collapsed="true">
+    <Position X="17.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\TimeEntriesCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.TimeEntry" Collapsed="true">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\TimeEntry.cs</FileName>
+      <HashCode>AASCgMICYABiBAAECBEABACBhCgAAAAABAAAAABIAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.BusinessLogicLayer.UsersCollection" Collapsed="true">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\UsersCollection.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.AccessDataAccessLayer" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\AccessDataAccessLayer.cs</FileName>
+      <HashCode>MWEhMGga0I7ay0iE5pERcpbT2XxstbjAcH/JUo0tBzA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.DataAccessLayerBaseClass" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\DataAccessLayer.cs</FileName>
+      <HashCode>G0AAEGwKAAICA0AA4lERcgaDiTQshdjIcPdJUgkIAoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.DataAccessLayerBaseClassHelper" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\DataAccessLayer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.SQLDataAccessLayer" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\SQLDataAccessLayer.cs</FileName>
+      <HashCode>MWEhMGAakI7ay0iE5pERcpLTyXxstbjAcH9JUo0tByI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.SqlHelper" Collapsed="true">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\SQLHelper.cs</FileName>
+      <HashCode>AAAAAACAAAAAAAAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.DataAccessLayer.SqlHelperParameterCache" Collapsed="true">
+    <Position X="12.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\DAL\SQLHelper.cs</FileName>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BugTracker.Web.Global" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Global.asax.cs</FileName>
+      <HashCode>AAAQAAAAIQAAAAAAAAGAAAACAAAAAAAAARgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BugTracker.UserInterfaceLayer.IEditProjectControl" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\UIL\IEditProjectControl.cs</FileName>
+      <HashCode>AAQAAAAAAAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BugTracker.UserInterfaceLayer.IIssueTab" Collapsed="true">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\UIL\IIssueTab.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BugTracker.BusinessLogicLayer.IssueRelationType" Collapsed="true">
+    <Position X="5.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>App_Code\Code\BLL\IssueRelationType.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

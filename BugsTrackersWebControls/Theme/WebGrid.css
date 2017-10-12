@@ -1,0 +1,137 @@
+﻿
+.grid-view{BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: 10px; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Verdana; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #EEEEEE}
+/*{
+	padding: 2;
+	margin: 0;
+	border: 1px solid #333;
+	font-family: "Verdana, Arial, Helvetica, sans-serif, Trebuchet MS";
+	font-size: 0.9em;
+}*/
+
+.grid-view tr.header
+{
+	 FONT-SIZE: 10px;
+	 COLOR: #000000; 
+	 BACKGROUND-COLOR: #ecd505;
+	 font-weight: bold;
+	 color: black;height: 25px;
+	 white-space: nowrap;
+}
+/*{
+	color: white;
+	background-color: #FF5600;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+}*/
+.grid-view tr.link { color: #DF4F13; text-decoration:none }
+.grid-view tr.normal
+{
+	font-size: 10px;
+	background-color: #EEEEEE;
+	padding-right: 4;
+	border-spacing: 4;
+	height: 25px;
+}
+/*{
+	color: black;
+	background-color: #FDC64E;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+}*/
+.grid-view tr.select
+{
+	font-size: 10px;
+	background-color: #FE414F;
+	padding-right: 4;
+	border-spacing: 4;
+	height: 25px;
+}
+/*{
+	color: black;
+	background-color: #FDC64E;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+}*/
+.grid-view tr.alternate{FONT-SIZE: 10px;BACKGROUND-COLOR: #ffff99;padding-left:4; border-spacing:4; height: 25px;}
+/*{
+	color: black;
+	background-color: #D59200;
+	height: 25px;
+	vertical-align: middle;
+	text-align: center;
+}*/
+.grid-view tr.normalhover, .grid-view tr.alternatehover
+{
+	font-size: 10px;
+	background-color: #CDCDCD;
+	padding-right: 4;
+	border-spacing: 4;
+	height: 25px;
+}
+
+
+.grid-view tr.normal:hover
+{
+	FONT-SIZE: 10px;BACKGROUND-COLOR: #ffcccc;padding-right:4; border-spacing:4;height: 25px;
+}
+.grid-view tr.alternate:hover
+{
+	FONT-SIZE: 10px;BACKGROUND-COLOR: #aaff99;padding-left:4; border-spacing:4; height: 25px;
+}
+.imgcursor
+{
+	cursor:hand;	
+}
+/* for hiiden cells in grid   */
+.hiddenCell
+{
+	display:none;	
+}
+/* for adtional grid info table */
+.mytable {
+BORDER-RIGHT: black 1px solid; 
+BORDER-TOP: black 1px solid; 
+
+BORDER-LEFT: black 1px solid; 
+BORDER-BOTTOM: black 1px solid; 
+
+border-collapse:collapse;
+/*width:200px;*/
+}
+.mytable td{
+/*background:#cccccc;*/
+FONT-SIZE: 8pt; 
+FONT-FAMILY: Arial; 
+text-align:left;
+}
+/*:link,:visited { color: #DF4F13; text-decoration:none }*/
+
+INPUT.field {
+	BORDER-RIGHT: #9b9b9b 1px solid; 
+	BORDER-TOP: #9b9b9b 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #9b9b9b 1px solid; 
+	COLOR: #000066; BORDER-BOTTOM: #9b9b9b 1px solid; FONT-FAMILY: Verdana; HEIGHT: 17px; 
+	BACKGROUND-COLOR: #f8f2c5;
+}
+SELECT.combo {
+	FONT-SIZE: 12px; COLOR: #000066; BORDER-TOP-STYLE: none; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; 
+	BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 17px; 
+	BACKGROUND-COLOR: #f8f2c5; BORDER-BOTTOM-STYLE: none
+}
+
+INPUT.submit_emitent {
+	BORDER-RIGHT: #999999 1px solid; PADDING-RIGHT: 1px; 
+	BORDER-TOP: #999999 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 12px; 
+	MARGIN-LEFT: 1px; BORDER-LEFT: #999999 1px solid; COLOR: #000000; 
+	TEXT-INDENT: 1pt; MARGIN-RIGHT: 1px; BORDER-BOTTOM: #999999 1px solid; 
+	FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; 
+	BACKGROUND-COLOR: #ecd505; FONT-VARIANT: normal; TEXT-DECORATION: none
+}
+.TD
+{
+	FONT-SIZE: 12px;FONT-STYLE:normal;FONT-FAMILY: Arial;font-weight:normal;vertical-align:top;
+	}

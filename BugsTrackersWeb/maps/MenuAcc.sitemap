@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap>
+	<siteMapNode title="Taskuri"
+				 url="~/Issues/IssueList.aspx"
+				 description="" />
+
+	<siteMapNode title="Cautare" url=""
+				 description="parent">
+		<siteMapNode title="Cautare task-uri"
+					 url="~/Queries/QueryList.aspx"
+					 description="begin" />
+		<siteMapNode title="Cautare bug-uri"
+					 url="~/Queries/QueryList.aspx"
+					 description="" />
+		<siteMapNode title="Cautare activitati"
+					 url="~/Queries/QueryList.aspx"
+					 description="end" />
+	</siteMapNode>
+
+	<siteMapNode title="Activitati"
+				 url="~/DaylyActivities.aspx"
+				 description="" />
+
+	<siteMapNode title="Administrare"
+				 url=""
+				 description="parent" >
+		<siteMapNode title="Forums"
+					 url="~/acc/AccWebForm3.aspx"
+					 description="end" />
+	</siteMapNode>
+	<siteMapNode title="Rapoarte"
+				 url="~/Reports/SelectReport.aspx"
+				 description="" />
+	<siteMapNode title="Iesire"
+			 url="~/LogOff.aspx"
+			 description="" />	
+
+</siteMap>

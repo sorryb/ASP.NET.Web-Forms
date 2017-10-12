@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <GenerateResourceNeverLockTypeAssemblies>true</GenerateResourceNeverLockTypeAssemblies>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5714F03-787B-4C5F-91E0-12002694DA39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BugTrackerWebControls</RootNamespace>
+    <AssemblyName>BugTrackerWebControls</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Nonshipping>true</Nonshipping>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/BugTrackerWebControls/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for BugTrackerWebControls.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\LogError.cs" />
+    <Compile Include="CreditInfo\CreditInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registerer\Registerer.cs" />
+    <Compile Include="WebGrid\CheckBoxTemplate.cs" />
+    <Compile Include="WebGrid\SuperFishMenu.cs" />
+    <Compile Include="WebGrid\CreditRequestsHiperLinkField.cs" />
+    <Compile Include="WebGrid\ImageTemplate.cs" />
+    <Compile Include="WebGrid\PagingGridView.cs" />
+    <Compile Include="WebGrid\WebGrid.cs" />
+    <Compile Include="XControls\CreditDropDownList.cs" />
+    <Compile Include="XControls\CreditRequestsDDList.cs" />
+    <Compile Include="XControls\CreditRequestsCheckBox.cs" />
+    <Compile Include="XControls\DatePicker.cs" />
+    <Compile Include="XControls\DateValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreditInfo\CeditRequestsControls.CreditInfo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ArrowDown.gif" />
+    <EmbeddedResource Include="Images\ArrowUp.gif" />
+    <EmbeddedResource Include="Images\sageata.gif" />
+    <EmbeddedResource Include="Scripts\WebGrid.js" />
+    <EmbeddedResource Include="Theme\WebGrid.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Theme\demos.css" />
+    <EmbeddedResource Include="Theme\redmond\images\ui-icons_217bc0_256x240.png" />
+    <EmbeddedResource Include="Theme\redmond\images\ui-icons_d8e7f3_256x240.png" />
+    <EmbeddedResource Include="Theme\redmond\jquery-ui-1.8.16.custom.css" />
+    <EmbeddedResource Include="Scripts\hoverIntent.js" />
+    <EmbeddedResource Include="Scripts\initmenu.js" />
+    <EmbeddedResource Include="Scripts\jquery-1.2.6.min.js" />
+    <EmbeddedResource Include="Scripts\jquery-1.6.2.js" />
+    <EmbeddedResource Include="Scripts\jquery.effects.core.js" />
+    <EmbeddedResource Include="Scripts\jquery.effects.fold.js" />
+    <EmbeddedResource Include="Scripts\jquery.ui.core.js" />
+    <EmbeddedResource Include="Scripts\jquery.ui.datepicker-ro.js" />
+    <EmbeddedResource Include="Scripts\jquery.ui.datepicker.js" />
+    <EmbeddedResource Include="Scripts\jquery.ui.widget.js" />
+    <EmbeddedResource Include="Images\calendar.gif" />
+    <EmbeddedResource Include="Scripts\DatePicker.js" />
+    <Content Include="Scripts\JScript.js" />
+    <Content Include="Scripts\SQL\PagesSelectGenerator.sql" />
+    <EmbeddedResource Include="Scripts\superfish.js" />
+    <EmbeddedResource Include="Scripts\supersubs.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
