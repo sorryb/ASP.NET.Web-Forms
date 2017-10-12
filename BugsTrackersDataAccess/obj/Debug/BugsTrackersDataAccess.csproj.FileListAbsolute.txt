@@ -1,0 +1,1 @@
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersDataAccess\obj\Debug\BugsTrackersDataAccess.csprojResolveAssemblyReference.cache

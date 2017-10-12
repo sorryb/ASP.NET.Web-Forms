@@ -1,0 +1,4 @@
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersUserInterface\bin\Debug\BugsTrackersUserInterface.dll
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersUserInterface\bin\Debug\BugsTrackersUserInterface.pdb
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersUserInterface\obj\Debug\BugsTrackersUserInterface.dll
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersUserInterface\obj\Debug\BugsTrackersUserInterface.pdb

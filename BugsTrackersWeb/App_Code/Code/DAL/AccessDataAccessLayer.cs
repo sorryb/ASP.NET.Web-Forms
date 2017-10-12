@@ -8,7 +8,8 @@ using System.Collections.Specialized;
 using System.Web.UI.WebControls;
 using BugsTrackers.BusinessLogicLayer;
 
-namespace BugsTrackers.DataAccessLayer {
+namespace BugsTrackers.DataAccessLayer
+{
 
 
 	//*********************************************************************

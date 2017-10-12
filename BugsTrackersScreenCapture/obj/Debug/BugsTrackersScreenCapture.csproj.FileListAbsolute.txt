@@ -10,3 +10,14 @@ G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersScreenCapture\obj\Debug\Bu
 G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.ConfigForm.resources
 G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.MainForm.resources
 G:\Work\BugTracker files\BugsTracker.Core\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.RubberBandForm.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\bin\Debug\ScreenCapture.exe.config
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\bin\Debug\ScreenCapture.exe
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\bin\Debug\ScreenCapture.pdb
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.AboutForm.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.ConfigForm.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.MainForm.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\btnet.Properties.Resources.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.RubberBandForm.resources
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\BugsTrackersScreenCapture.csproj.GenerateResource.Cache
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\ScreenCapture.exe
+G:\Work\BugTracker files\ASP.NET.Web-Forms\BugsTrackersScreenCapture\obj\Debug\ScreenCapture.pdb
