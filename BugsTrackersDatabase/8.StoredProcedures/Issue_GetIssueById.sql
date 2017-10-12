@@ -1,0 +1,20 @@
+SET ANSI_NULLS OFF
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+
+
+
+CREATE PROCEDURE Issue_GetIssueById 
+  @IssueId Int
+AS
+
+SELECT 
+	*
+FROM 
+	IssuesView
+WHERE
+	IssueId = @IssueId
+
+
+GO

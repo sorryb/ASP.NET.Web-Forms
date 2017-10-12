@@ -1,0 +1,23 @@
+SET ANSI_NULLS OFF
+GO
+SET QUOTED_IDENTIFIER OFF
+GO
+
+
+
+CREATE PROCEDURE ProjectStatus_DeleteStatus
+	@StatusIdToDelete INT
+AS
+DELETE 
+	ProjectStatus
+WHERE
+	StatusId = @StatusIdToDelete
+
+IF @@ROWCOUNT > 0 
+	RETURN 0
+ELSE
+	RETURN 1
+
+
+
+GO

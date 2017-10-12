@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>BugsTrackersDatabase</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{04113e8a-1847-45f1-ae30-8e13e2c30c42}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>BugsTrackersDatabase</RootNamespace>
+    <AssemblyName>BugsTrackersDatabase</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="1.DataBase" />
+    <Folder Include="2.Tables" />
+    <Folder Include="3.InsertInTables" />
+    <Folder Include="4.Indexes" />
+    <Folder Include="5.Checks" />
+    <Folder Include="6.Functions" />
+    <Folder Include="7.Views" />
+    <Folder Include="8.StoredProcedures" />
+    <Folder Include="8.StoredProcedures\Common" />
+    <Folder Include="9.Triggers" />
+    <Folder Include="Create Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="1.DataBase\Create_Database.sql" />
+    <Build Include="2.Tables\dbo.Entrylog.Table.sql" />
+    <Build Include="2.Tables\dbo.IssueAttachments.Table.sql" />
+    <Build Include="2.Tables\dbo.IssueComments.Table.sql" />
+    <Build Include="2.Tables\dbo.IssueHistory.Table.sql" />
+    <Build Include="2.Tables\dbo.IssueNotifications.Table.sql" />
+    <Build Include="2.Tables\dbo.Issues.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectCategories.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectCustomFields.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectCustomFieldValues.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectMembers.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectMilestones.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectPriorities.Table.sql" />
+    <Build Include="2.Tables\dbo.Projects.Table.sql" />
+    <Build Include="2.Tables\dbo.ProjectStatus.Table.sql" />
+    <Build Include="2.Tables\dbo.Queries.Table.sql" />
+    <Build Include="2.Tables\dbo.QueryClauses.Table.sql" />
+    <Build Include="2.Tables\dbo.RelatedIssues.Table.sql" />
+    <Build Include="2.Tables\dbo.Roles.Table.sql" />
+    <Build Include="2.Tables\dbo.Users.Table.sql" />
+    <Build Include="2.Tables\dbo.ZileNelucratoare.Table.sql" />
+    <Build Include="3.InsertInTables\Roles.sql" />
+    <Build Include="3.InsertInTables\Users.sql" />
+    <Build Include="3.InsertInTables\ZileNelucratoare.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_IssueAttachments.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_IssueHistory.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_IssueNotifications.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_Issues.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_IssueStatus.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_ProjectCustomFields.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_ProjectCustomFieldValues.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_ProjectMilestones.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_ProjectPriorities.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_Projects.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_Queries.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_Roles.sql" />
+    <Build Include="4.Indexes\PK_IssueTracker_Users.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_IssueComments_IssueTracker_Issues.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_IssueHistory_IssueTracker_Issues.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_IssueNotifications_IssueTracker_Issues.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_Issues_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectCategories_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectCustomFields_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectCustomFieldValues_IssueTracker_ProjectCustomFields.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectMembers_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectMilestones_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectPriorities_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_ProjectStatus_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_Queries_IssueTracker_Projects.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_QueryClauses_IssueTracker_Queries.sql" />
+    <Build Include="5.Checks\FK_IssueTracker_RelatedIssues_IssueTracker_Issues.sql" />
+    <Build Include="6.Functions\ComputeWorkDay.sql" />
+    <Build Include="6.Functions\GetInitialNumerOfBugs.sql" />
+    <Build Include="6.Functions\GetWorkingDays.sql" />
+    <Build Include="7.Views\IssuesView.sql" />
+    <Build Include="7.Views\SelectEstimatExecutat.sql" />
+    <Build Include="7.Views\SelectIssuesForCreditRequests.sql" />
+    <Build Include="7.Views\SelectTaskByID.sql" />
+    <Build Include="7.Views\SelectTotalsByUsersAndStatus.sql" />
+    <Build Include="7.Views\SelectUsersActivityByDate.sql" />
+    <Build Include="8.StoredProcedures\Common\CreateLoadScriptFiles.sql" />
+    <Build Include="8.StoredProcedures\Common\GenerateSQLObjectScriptFile.sql" />
+    <Build Include="8.StoredProcedures\Common\GenerateTextFileTables.sql" />
+    <Build Include="8.StoredProcedures\Common\ScriptToFile.sql" />
+    <Build Include="8.StoredProcedures\AddTimeEntry.sql" />
+    <Build Include="8.StoredProcedures\CustomField_CreateNewCustomField.sql" />
+    <Build Include="8.StoredProcedures\CustomField_DeleteCustomField.sql" />
+    <Build Include="8.StoredProcedures\CustomField_GetCustomFieldsByIssueId.sql" />
+    <Build Include="8.StoredProcedures\CustomField_GetCustomFieldsByProjectId.sql" />
+    <Build Include="8.StoredProcedures\CustomField_SaveCustomFieldValue.sql" />
+    <Build Include="8.StoredProcedures\DeleteTimeEntry.sql" />
+    <Build Include="8.StoredProcedures\GetAnalisysByWeek.sql" />
+    <Build Include="8.StoredProcedures\GetTimeEntry.sql" />
+    <Build Include="8.StoredProcedures\GetUserByUserName.sql" />
+    <Build Include="8.StoredProcedures\GetUserDisplayName.sql" />
+    <Build Include="8.StoredProcedures\Initialize.sql" />
+    <Build Include="8.StoredProcedures\Issue_CreateNewIssue.sql" />
+    <Build Include="8.StoredProcedures\Issue_DeleteIssue.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssueById.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssuesByAssignedUsername.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssuesByCreatorUsername.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssuesByOwnerUsername.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssuesByProjectId.sql" />
+    <Build Include="8.StoredProcedures\Issue_GetIssuesByRelevancy.sql" />
+    <Build Include="8.StoredProcedures\Issue_UpdateIssue.sql" />
+    <Build Include="8.StoredProcedures\IssueAttachment_CreateNewIssueAttachment.sql" />
+    <Build Include="8.StoredProcedures\IssueAttachment_Delete.sql" />
+    <Build Include="8.StoredProcedures\IssueAttachment_GetIssueAttachmentById.sql" />
+    <Build Include="8.StoredProcedures\IssueAttachment_GetIssueAttachmentsByIssueId.sql" />
+    <Build Include="8.StoredProcedures\IssueComment_CreateNewIssueComment.sql" />
+    <Build Include="8.StoredProcedures\IssueComment_GetIssueCommentsByIssueId.sql" />
+    <Build Include="8.StoredProcedures\IssueHistory_CreateNewHistory.sql" />
+    <Build Include="8.StoredProcedures\IssueHistory_GetIssueHistoryByIssueId.sql" />
+    <Build Include="8.StoredProcedures\IssueNotification_CreateNewIssueNotification.sql" />
+    <Build Include="8.StoredProcedures\IssueNotification_DeleteIssueNotification.sql" />
+    <Build Include="8.StoredProcedures\IssueNotification_GetIssueNotificationsByIssueId.sql" />
+    <Build Include="8.StoredProcedures\ListCategories.sql" />
+    <Build Include="8.StoredProcedures\ListProjectsWithMembership.sql" />
+    <Build Include="8.StoredProcedures\ListTimeEntries.sql" />
+    <Build Include="8.StoredProcedures\Project_AddUserToProject.sql" />
+    <Build Include="8.StoredProcedures\Project_CloneProject.sql" />
+    <Build Include="8.StoredProcedures\Project_CreateNewProject.sql" />
+    <Build Include="8.StoredProcedures\Project_DeleteProject.sql" />
+    <Build Include="8.StoredProcedures\Project_GetAllProjects.sql" />
+    <Build Include="8.StoredProcedures\Project_GetProjectById.sql" />
+    <Build Include="8.StoredProcedures\Project_GetProjectByUsername.sql" />
+    <Build Include="8.StoredProcedures\Project_RemoveUserFromProject.sql" />
+    <Build Include="8.StoredProcedures\Project_UpdateProject.sql" />
+    <Build Include="8.StoredProcedures\ProjectCategories_CreateNewCategory.sql" />
+    <Build Include="8.StoredProcedures\ProjectCategories_DeleteCategory.sql" />
+    <Build Include="8.StoredProcedures\ProjectCategories_GetCategoriesByProjectId.sql" />
+    <Build Include="8.StoredProcedures\ProjectMilestones_CreateNewMilestone.sql" />
+    <Build Include="8.StoredProcedures\ProjectMilestones_DeleteMilestone.sql" />
+    <Build Include="8.StoredProcedures\ProjectMilestones_GetMilestonesByProjectId.sql" />
+    <Build Include="8.StoredProcedures\ProjectPriorities_CreateNewPriority.sql" />
+    <Build Include="8.StoredProcedures\ProjectPriorities_DeletePriority.sql" />
+    <Build Include="8.StoredProcedures\ProjectPriorities_GetPrioritiesByProjectId.sql" />
+    <Build Include="8.StoredProcedures\ProjectStatus_CreateNewStatus.sql" />
+    <Build Include="8.StoredProcedures\ProjectStatus_DeleteStatus.sql" />
+    <Build Include="8.StoredProcedures\ProjectStatus_GetStatusByProjectId.sql" />
+    <Build Include="8.StoredProcedures\Query_DeleteQuery.sql" />
+    <Build Include="8.StoredProcedures\Query_GetQueriesByUsername.sql" />
+    <Build Include="8.StoredProcedures\Query_GetSavedQuery.sql" />
+    <Build Include="8.StoredProcedures\Query_SaveQuery.sql" />
+    <Build Include="8.StoredProcedures\Query_SaveQueryClause.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_CreateNewChildIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_CreateNewParentIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_CreateNewRelatedIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_DeleteChildIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_DeleteParentIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_DeleteRelatedIssue.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_GetChildIssues.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_GetParentIssues.sql" />
+    <Build Include="8.StoredProcedures\RelatedIssue_GetRelatedIssues.sql" />
+    <Build Include="8.StoredProcedures\Role_GetAllRoles.sql" />
+    <Build Include="8.StoredProcedures\UpdateTimeEntry.sql" />
+    <Build Include="8.StoredProcedures\User_Authenticate.sql" />
+    <Build Include="8.StoredProcedures\User_CreateNewUser.sql" />
+    <Build Include="8.StoredProcedures\User_GetAllUsers.sql" />
+    <Build Include="8.StoredProcedures\User_GetAllUsersByRoleName.sql" />
+    <Build Include="8.StoredProcedures\User_GetUserById.sql" />
+    <Build Include="8.StoredProcedures\User_GetUserByUsername.sql" />
+    <Build Include="8.StoredProcedures\User_GetUsersByProjectId.sql" />
+    <Build Include="8.StoredProcedures\User_UpdateUser.sql" />
+    <Build Include="9.Triggers\Issues.sql" />
+    <Build Include="Create Scripts\Update_amanate.sql" />
+    <Build Include="Create Scripts\Update_deschise.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="1.DataBase\vssver2.scc" />
+    <None Include="2.Tables\vssver2.scc" />
+    <None Include="3.InsertInTables\vssver2.scc" />
+    <None Include="4.Indexes\vssver2.scc" />
+    <None Include="5.Checks\vssver2.scc" />
+    <None Include="6.Functions\vssver2.scc" />
+    <None Include="7.Views\vssver2.scc" />
+    <None Include="8.StoredProcedures\Common\vssver2.scc" />
+    <None Include="8.StoredProcedures\vssver2.scc" />
+    <None Include="Create Scripts\vssver2.scc" />
+    <None Include="executeSQL.bat" />
+    <None Include="runAll.bat" />
+    <None Include="runAll.vbs" />
+  </ItemGroup>
+</Project>
